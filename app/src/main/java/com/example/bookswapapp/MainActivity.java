@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             String username = EncryptionUtil.decrypt(sharedPreferences.getString("re_65_@#", ""));
             sessionManager = SessionManager.getInstance();
             sessionManager.setUsername(username);
-            Intent intent = new Intent(MainActivity.this, MyProfile.class);
+            Intent intent = new Intent(MainActivity.this, Home.class);
             startActivity(intent);
             finish();
         }
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
                                                 editor.putString("sal_88_*&", EncryptionUtil.encrypt(enteredPassword));
                                                 editor.putBoolean("is_in_@@%", true);
                                                 editor.apply();
-                                                Intent hom = new Intent(MainActivity.this, MyProfile.class);
+                                                Intent hom = new Intent(MainActivity.this, Home.class);
                                                 startActivity(hom);
                                                 finish();
                                             }

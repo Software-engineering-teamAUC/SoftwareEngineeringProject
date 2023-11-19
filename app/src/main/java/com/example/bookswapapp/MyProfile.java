@@ -349,15 +349,15 @@ public class MyProfile extends AppCompatActivity implements BottomNavigationView
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.home) {
-            Intent i = new Intent(MyProfile.this, MyProfile.class);
+            Intent i = new Intent(MyProfile.this, Home.class);
             startActivity(i);
             return true;
         } else if (id == R.id.search) {
-            Intent i = new Intent(MyProfile.this, MyProfile.class);
+            Intent i = new Intent(MyProfile.this, Search.class);
             startActivity(i);
             return true;
         } else if (id == R.id.library) {
-            Intent i = new Intent(MyProfile.this, UploadBookActivity.class);
+            Intent i = new Intent(MyProfile.this, LibraryActivity.class);
             startActivity(i);
             return true;
         } else if (id == R.id.profile) {

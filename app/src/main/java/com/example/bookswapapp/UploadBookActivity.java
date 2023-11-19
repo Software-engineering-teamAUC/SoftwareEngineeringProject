@@ -252,7 +252,6 @@ public class UploadBookActivity extends AppCompatActivity {
                     if (fetchBookInfoTask != null && !fetchBookInfoTask.isCancelled()) {
                         fetchBookInfoTask.cancel(true);
                     }
-
                     fetchBookInfoTask = new FetchBookInfoTask();
                     fetchBookInfoTask.execute(isbn);
                 } else {
